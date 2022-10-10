@@ -24,22 +24,24 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Hogar <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Hogar<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Descargar</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link disabled" href="#">La universidad</a>
+              <a class="nav-link" href="https://www.ut.edu.co/">La universidad</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Nosotros</a>
             </li>
           </ul>
+         <!--
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
+           -->
         </div>
       </nav>
     </header>
@@ -55,7 +57,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
               <img class="first-slide"
-                   src="{% static "img/E_Rally_Logo.webp" %}"
+                   src="{% static "img/E_Rally.PNG" %}"
                    class="img-fluid rounded mx-auto d-block pb-4" style="max-width: 60%;"
                    alt="First slide"
               >
@@ -74,8 +76,11 @@
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide" rc="{% static "img/Slider01.png" %}"
+                   class="img-fluid rounded mx-auto d-block pb-4" style="max-width: 60%;"
+                   alt="First slide>
             <div class="container">
               <div class="carousel-caption">
                 <h1>Another example headline.</h1>
@@ -85,7 +90,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="{% static "img/E_Rally_Logo.webp" %}" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>One more for good measure.</h1>
@@ -105,6 +110,7 @@
         </a>
       </div>
 
+      
 
       <!-- Marketing messaging and featurettes
       ================================================== -->
@@ -112,25 +118,36 @@
 
       <div class="container marketing">
 
-        <!-- Three columns of text below the carousel -->
+
+          <div class="col-md-12">
+            <h1 class="featurette-heading">Motores de desarrollo. <span class="text-muted">Si he logrado ver más lejos, ha sido porque he subido a hombros de gigantes.</span></h1>
+          </div>
+
+        <!-- Four columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="https://imgs.search.brave.com/tJ9C6YEfQxm_tzNYCcAk6pz7B1KEJxmZNdTcSg7ta04/rs:fit:1054:1024:1/g:ce/aHR0cHM6Ly9tZWRp/YS5pbmRpZWRiLmNv/bS9pbWFnZXMvZW5n/aW5lcy8xLzEvNjMz/L2dvZG90X2xvZ29f/YmlnLnBuZw" alt="Generic placeholder image" width="140" height="140">
+            <h2>GODOT</h2>
+            <p>Godot es un motor de juego multiplataforma , gratuito y de código abierto lanzado bajo la licencia MIT .</p>
+            <p><a class="btn btn-secondary" href="https://godotengine.org/" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-lg-3">
+            <img class="rounded-circle" src="https://www.nicepng.com/png/detail/343-3436343_blender-logo-png.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>BLENDER</h2>
+            <p>Blender es un programa informático multiplataforma, dedicado especialmente al modelado, iluminación, renderizado, la animación y creación de gráficos tridimensionales.</p>
+            <p><a class="btn btn-secondary" href="https://www.blender.org/" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-lg-3">
+            <img class="rounded-circle" src="https://framagit.org/uploads/-/system/project/avatar/28062/django.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>DJANGO</h2>
+            <p>Django es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador (MVC). </p>
+            <p><a class="btn btn-secondary" href="https://www.djangoproject.com/" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-3">
+              <img class="rounded-circle" src="https://w7.pngwing.com/pngs/585/822/png-transparent-python-scalable-graphics-logo-javascript-creative-dimensional-code-angle-text-rectangle.png" alt="Generic placeholder image" width="140" height="140">
+              <h2>PYTHON</h2>
+              <p>Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Spotify, Panda 3D, entre otros.</p>
+            <p><a class="btn btn-secondary" href="https://www.python.org/" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -141,11 +158,11 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <h2 class="featurette-heading">Primer reportaje. <span class="text-muted">Te dejará boquiabierto</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="{% static "img/E_Rally1.jpg" %}" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -153,11 +170,11 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <h2 class="featurette-heading">Oh sí, es tan bueno. <span class="text-muted">Ver por ti mismo.</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="{% static "img/CArro.jpeg" %}" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -165,11 +182,11 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <h2 class="featurette-heading">Y por último, esto. <span class="text-muted">Codigo abierto.</span></h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" src="{% static "img/open-source.jpg" %}" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -183,18 +200,23 @@
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; Licenciatura en matemáticas <a href="#">Fabio ANdres Avellaneda Castilla</a> &middot; <a href="#">Juan Pablo Mendieta Castillo</a></p>
       </footer>
     </main>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../../assets/js/vendor/holder.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+		var elems = document.querySelectorAll('.slider');
+		var instances = M.Slider.init(elems,{
+			interval:1000
+		});
+		var elems = document.querySelectorAll('.materialboxed');
+		var instances = M.Materialbox.init(elems);
+		});
+	</script>
   </body>
 </html>
